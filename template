@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.min.js"
+        crossorigin="anonymous"></script>
+  <script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.2.min.js"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.bokeh.org/bokeh/release/bokeh-api-2.4.2.min.js"
+          crossorigin="anonymous"></script>
+  <script src="myfunctions.js"></script>
+  <script src="themodel.js"></script>
+  <script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.js></script>
+
+  <!-- use KaTeX for nice equations -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+  <title>model</title>
+
+  <style type="text/css">
+    html, body {
+      height: 100%;
+    }
+
+    /* Style the body */
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      background-color: lightslategray;
+    }
+
+    /* this contains the main content */
+    .content {
+      flex: 1 0 auto;
+    }
+
+    /* Column container */
+    .row {  
+      display: flex;
+    }
+
+    /* Create two unequal columns that sit next to each other */
+    /* Sidebar/left column */
+    .side {
+      background-color: white;
+      padding: 20px;
+    }
+
+    /* Main column */
+    .main {
+      background-color: white;
+      padding: 20px;
+    }
+
+    /* Responsive layout - when the screen is less than ###px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 1000px) {
+      .row {   
+        flex-direction: column;
+      }
+      .side {
+        border-bottom: 2px dashed #262626;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="content" style="width: 90%; margin:auto; min-width: 400px; max-width: 1500px;">
+    <div class="row">
+      <div class="side" style="flex: 7">
+        +placeholder1+
+      </div>
+      <div class="main" style="flex: 3">
+        +placeholder2+
+      </div>
+    </div>
+    <div class="row">
+      <div class="main" style="flex: 100%; border-top: 2px dashed #262626;">
+        This model solves a 1-D transport problem, representative of a column experiment. The compound is subject to advection, dispersion and reaction. The normed concentration distribution is given by: <br>
+        <div style="text-align: center;">
+          <div style=" border: solid 2px black; display: inline-block">
+            \( \frac{c(x, t)}{c_0} = \frac{1}{2} \mathrm{erfc}\Big(\frac{x - vt}{\sqrt{4Dt}}\Big) \mathrm{exp}(-\lambda t) \)
+          </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
