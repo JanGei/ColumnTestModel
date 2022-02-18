@@ -84,7 +84,7 @@
         This model solves a 1-D transport problem, representative of a column experiment. The compound is subject to advection, dispersion and reaction. The normed concentration distribution is given by: <br>
         <div style="text-align: center;">
           <div style=" border: solid 2px black; display: inline-block">
-            \( \frac{c(x, t)}{c_0} = \frac{1}{2} \mathrm{erfc}\Big(\frac{x - vt}{\sqrt{4Dt}}\Big) \mathrm{exp}(-\lambda t) \)
+            \( \frac{c(x, t)}{c_0} = \frac{1}{2} \mathrm{erfc}\Big(\frac{x - vt}{\sqrt{4Dt}}\Big) \mathrm{exp}(\frac{-\lambda x}{v}) \)
           </div>
       </div>
     </div>
