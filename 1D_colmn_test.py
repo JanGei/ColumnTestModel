@@ -141,6 +141,6 @@ filedata = filedata.replace('+placeholder1+', div1)
 filedata = filedata.replace('+placeholder2+', div2)
 
 # write to html file
-with open('1D_column_test.html', 'w') as file:
+with open('index.html', 'w') as file:
   file.write(filedata)
 
