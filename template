@@ -10,7 +10,6 @@
           crossorigin="anonymous"></script>
   <script src="https://cdn.bokeh.org/bokeh/release/bokeh-api-2.4.2.min.js"
           crossorigin="anonymous"></script>
-  <script src="myfunctions.js"></script>
   <script src="themodel.js"></script>
   <script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.js></script>
 
